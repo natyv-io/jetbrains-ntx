@@ -25,7 +25,7 @@ repositories {
 // verification target, this is just what the free dev sandbox runs.
 dependencies {
     intellijPlatform {
-        create("GO", "2023.3.6")
+        create("GO", "2024.3.5")
     }
 }
 
