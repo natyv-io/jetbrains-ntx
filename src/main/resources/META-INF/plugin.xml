@@ -1,0 +1,18 @@
+<idea-plugin>
+    <id>dev.natyv.ntx</id>
+    <name>natyv Language Support</name>
+    <vendor>natyv</vendor>
+    <description>Real-time diagnostics, hover, go-to-definition, and autocomplete for natyv's .ntx markup files via the ntx-lsp language server, plus syntax highlighting.</description>
+    <version>0.1.0</version>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileType name="ntx"
+                  implementationClass="dev.natyv.ntx.NtxFileType"
+                  fieldName="INSTANCE"
+                  language="ntx"
+                  extensions="ntx"/>
+        <platform.lsp.serverSupportProvider implementation="dev.natyv.ntx.NtxLspServerSupportProvider"/>
+    </extensions>
+</idea-plugin>
