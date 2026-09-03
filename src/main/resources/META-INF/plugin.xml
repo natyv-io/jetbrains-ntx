@@ -14,5 +14,7 @@
                   language="ntx"
                   extensions="ntx"/>
         <platform.lsp.serverSupportProvider implementation="dev.natyv.ntx.NtxLspServerSupportProvider"/>
+        <lang.syntaxHighlighterFactory language="ntx"
+                  implementationClass="dev.natyv.ntx.NtxSyntaxHighlighterFactory"/>
     </extensions>
 </idea-plugin>
